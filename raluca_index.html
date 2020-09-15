@@ -10,12 +10,12 @@
 
     <h1>Please help us with new informations:</h1>
 
-    <form action="https://kloapp.herokuapp.com/add"> 
+    <form action="https://kloapp.herokuapp.com/add" method="POST"> 
 
         <div>
             <label class="label-width">City:</label>
                 <select name="city" id="city">
-                    <option>Select a city</option>
+                    <option >Select a city</option>
                     <option>Mannheim</option>
                     <option>Heidelberg</option>
                     <option>Karlsruhe</option>
@@ -23,13 +23,18 @@
         </div>
 
         <div>
+            <label class="label-width">Zip Code</label>
+            <input type="number" minlength="5" maxlength="10">
+        </div>
+
+        <div>
             <label class="label-width">Street:</label>
-            <textarea name="street"></textarea>
+            <textarea name="street" minlength="3" required=" " placeholder="street"></textarea>
         </div>
 
         <div>
             <label class="label-width">House Number:</label>
-            <input type="number">
+            <input type="number" required>
         </div>
 
         <div>
@@ -39,15 +44,18 @@
 
         <div>
             <span class="label-width">Features:</span>
-            <input type="checkbox">
-            <label>Mirror</label>
-            <input type="checkbox">
+            <label class="switch">
+                <input type="checkbox" name="feat-mirror">
+                <label>Mirror</label>
+                <span class="slider"></span>
+            </label>
+            <input type="checkbox" name="feat-papertowels">
             <label>Paper towels</label>
-            <input type="checkbox">
+            <input type="checkbox" name="feat-perfume">
             <label>Perfume</label>
-            <input type="checkbox">
+            <input type="checkbox" name="feat-access">
             <label>Accessibility</label>
-            <input type="checkbox">
+            <input type="checkbox" name="feat-soap">
             <label>Soap</label>
         </div>
 

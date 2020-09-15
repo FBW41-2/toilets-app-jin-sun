@@ -20,3 +20,12 @@ form .label-width {
     text-align: right;
     vertical-align: top;
 }
+
+input:focus {
+    background-color: lightgray;
+}
+
+input:invalid {
+    background-color: red;
+}
+
