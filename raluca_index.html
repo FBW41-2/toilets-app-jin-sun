@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="raluca_style.css">
+    <title>Public Toilets</title>
+</head>
+<body>
+
+    <h1>Please help us with new informations:</h1>
+
+    <form action="https://kloapp.herokuapp.com/add"> 
+
+        <div>
+            <label class="label-width">City:</label>
+                <select name="city" id="city">
+                    <option >Select a city</option>
+                    <option>Mannheim</option>
+                    <option>Heidelberg</option>
+                    <option>Karlsruhe</option>
+                </select>
+        </div>
+
+        <div>
+            <label class="label-width">Zip Code</label>
+            <input type="number" minlength="5" maxlength="10">
+        </div>
+
+        <div>
+            <label class="label-width">Street:</label>
+            <textarea name="street" minlength="3" required=" " placeholder="street"></textarea>
+        </div>
+
+        <div>
+            <label class="label-width">House Number:</label>
+            <input type="number" required>
+        </div>
+
+        <div>
+            <label class="label-width">Location Name:</label>
+            <textarea name="locationName"></textarea>
+        </div>
+
+        <div>
+            <span class="label-width">Features:</span>
+            <label class="switch">
+                <input type="checkbox" name="feat-mirror">
+                <label>Mirror</label>
+                <span class="slider"></span>
+            </label>
+            <input type="checkbox" name="feat-papertowels">
+            <label>Paper towels</label>
+            <input type="checkbox" name="feat-perfume">
+            <label>Perfume</label>
+            <input type="checkbox" name="feat-access">
+            <label>Accessibility</label>
+            <input type="checkbox" name="feat-soap">
+            <label>Soap</label>
+        </div>
+
+        <div>
+            <label class="label-width">Number of stall</label>
+            <input type="number">
+        </div>
+
+        <div>
+            <span class="label-width">Rating</span>
+            <input type="radio" id="rating" name="rating" value="betternot">
+            <label for="betternot">Better not</label>
+            <input type="radio" id="rating" name="rating" value="itworks">
+            <label for="itworks">It works</label>
+            <input type="radio" id="rating" name="rating" value="decent">
+            <label for="decent">Decent</label>
+            <input type="radio" id="rating" name="rating" value="quitewell">
+            <label for="quitewell">Quite well, actually</label>
+            <input type="radio" id="rating" name="rating" value="heaven">
+            <label for="heaven">Heaven</label>
+        </div>
+
+        <div>
+            <span class="label-width"></span>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form> 
+    
+</body>
+</html>
