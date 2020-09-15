@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <thead>
+        <h2>Country Form</h2>
+        <form action="https://kloapp.herokuapp.com/add">
+            <!---             -->
+            <label for="country">
+                Country:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
+
+            <select id="country" name="country" class="form-control">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+            </select>
+
+
+            <br> <label for="NCity">
+                <br>The City:</label><br>
+            <input type="text" id="NCity" name="city"><br>
+
+            <label for="Street"> <br>The street
+                <br><input type="text" name="City" ilabeld="street">
+            </label>
+
+            <label for="HouseNr"><br> House Nr:
+                <br><input type="text" id="HouseNr" name="steetnr"><br>
+            </label>
+            <label for="Name of location"><br> Name of Location
+                <br><input type="text" id="NameOfLocation" name="name"><br>
+            </label>
+
+    </thead>
+    <tbody>
+        <h2>
+            Features
+        </h2>
+
+        <!--Mirror-->
+        <label for="featMi">
+            Feat-Mirror
+            <br><input type="checkbox" name="Feat-mirror" id="featMi">
+        </label>
+
+        <label for="paper">
+            <br>Paper towels
+            <br> <input type="checkbox" name="feat-papertowels" id="paper">
+        </label>
+
+
+        <label for="Perfume">
+            <br>Perfume
+            <br> <input type="checkbox" name="feat-perfume" id="Perfume">
+        </label>
+
+        <label for="Accessibility">
+            <br>Accessibility
+            <br> <input type="text" name="feat-access" id="Accessibility">
+        </label>
+
+        <label for="Soap">
+            <br>Soap
+            <br> <input type="checkbox" name="feat-soap" id="Soap">
+        </label>
+
+        <label for="Number of stalls">
+            <br>Number of stalls
+            <br> <input type="number" name="stalls" id="Number of stalls">
+        </label>
+
+        <!--Rating-->
+
+        <label for="Rating>
+            <br>Rating
+            <br> <br> <input type=" radio" name="rating" id="first">
+        </label>
+
+        <!--How we can kepp all reting?-->
+        <label for="rating"> <br> Rating
+            <br> <input type="radio" name="rating" value="1" id="first">
+            <input type="radio" name="rating" value="2" id="secand">
+            <input type="radio" name="rating" value="3" id="ther">
+            <input type="radio" name="rating" value="4" id="four">
+            <input type="radio" name="rating" value="5" id="five">
+        </label>
+
+
+
+        <label for="rating"> <br> Rating2
+            <br> <input type="number" aria-valuemin="1" aria-valuemax="5" name="rating" vid="first">
+
+        </label>
+
+
+
+        <!-- Add icon library -->
+        <h2>Star Rating</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+
+
+        <br><label for="Rating">
+            Group rating:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
+
+        <select id="one" name="Rating" class="ratin-n">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+        </select>
+
+
+
+
+
+    </tbody>
+    </form>
+</body>
+
+</html>
