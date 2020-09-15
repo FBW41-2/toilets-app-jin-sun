@@ -10,35 +10,63 @@
 </head>
 
 <body>
+    <h1>Hallo in Toilet World</h1>
+
+    <form action="/action_page.php">
+        <label for="username">Username:</label>
+        <input type="text" id="First Name" name="username" required>
+        <input type="email" id="username" name="email" placeholder="write-your-email " required>
+        <input type="submit">
+        <label for="Date"> <br> Birthday
+            <br> <input type="date" min="1900-01-01" max="2022-01-01" valua="15-09-2020" .required>
+        </label>
+
+
+    </form>
 
     <thead>
-        <h2>Country Form</h2>
-        <form action="https://kloapp.herokuapp.com/add">
+        <h2>Deutsche Länder</h2>
+        <form action="https://kloapp.herokuapp.com/all">
             <!---             -->
-            <label for="country">
-                Country:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
+            <label for="Deutsche Länder">
+                Deutsche Länder:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
 
-            <select id="country" name="country" class="form-control">
-                <option value="Afghanistan">Afghanistan</option>
-                <option value="Åland Islands">Åland Islands</option>
-                <option value="Albania">Albania</option>
-                <option value="Algeria">Algeria</option>
+            <select id="country" name="Deutsche Länder" class="Deutsche Länder">
+                <option value="Baden Württemberg">Baden Württemberg</option>
+                <option value="Bayern">Bayern</option>
+                <option value="Berlin">Berlin</option>
+                <option value="Brandenburg">Brandenburg</option>
+                <option value="Bremen">Bremen</option>
+                <option value="Brandenburg">Brandenburg</option>
+                <option value="Hamburg">Hamburg</option>
+                <option value="Hessen">Hessen</option>
+                <option value="Mecklenburg-Vorpommen">Mecklenburg-Vorpommen</option>
+                <option value="Niedersachsen">Niedersachsen</option>
+                <option value="Nordrhein Westfalen">Nordrhein Westfalen</option>
+                <option value="Rheinland Pflaz">Rheinland Pflaz</option>
+                <option value="Sarland">Sarland</option>
+                <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+                <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+                <option value="Thüringen">Thüringen</option>
+
             </select>
-
-
             <br> <label for="NCity">
                 <br>The City:</label><br>
-            <input type="text" id="NCity" name="city"><br>
+            <input type="text" id="NCity" name="city" minlength="3" required><br>
 
             <label for="Street"> <br>The street
-                <br><input type="text" name="City" ilabeld="street">
+                <br><input type="text" name="City" ilabeld="street" minlength="3" required>
             </label>
+            <label for="Zip"> <br>Zip code
+                <br><input type="text" name="zip-code" minlength="5" maxlength="5" ilabeld="zip-code" required>
+            </label>
+
 
             <label for="HouseNr"><br> House Nr:
                 <br><input type="text" id="HouseNr" name="steetnr"><br>
             </label>
             <label for="Name of location"><br> Name of Location
-                <br><input type="text" id="NameOfLocation" name="name"><br>
+                <br><input type="text" id="NameOfLocation" name="name" required><br>
             </label>
 
     </thead>
@@ -76,7 +104,7 @@
 
         <label for="Number of stalls">
             <br>Number of stalls
-            <br> <input type="number" name="stalls" id="Number of stalls">
+            <br> <input type="number" name="stalls" id="Number of stalls" min="1">
         </label>
 
         <!--Rating-->
@@ -97,8 +125,8 @@
 
 
 
-        <label for="rating"> <br> Rating2
-            <br> <input type="number" aria-valuemin="1" aria-valuemax="5" name="rating" vid="first">
+        <label for="rating"> <br> Rating (1-5)
+            <br> <input type="number" min="1" max="5" name="rating" vid="first">
 
         </label>
 
@@ -125,12 +153,31 @@
 
         </select>
 
+        <!-- Rounded switch -->
+        <br><label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <h2>kids</h2>
+        <table>
+            <tr>
+                <th colspan="2">The first Name </th>
+                <th colspan="2">The Last Name </th>
+                <th colspan="2">The Hoppey </th>
+            </tr>
+
+            </tr>
+            <tr>
+                <td.rowspan="2"> Cologen </td.rowspan=>
+                    <td.rowspan="2"> Mcdonaldes </td.rowspan=>
+                        <td.rowspan="2"> Airdryes </td.rowspan=>
+
+            </tr>
 
 
 
 
-    </tbody>
-    </form>
+            </form>
 </body>
 
 </html>
