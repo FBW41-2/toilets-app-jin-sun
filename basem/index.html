@@ -10,174 +10,183 @@
 </head>
 
 <body>
-    <h1>Hallo in Toilet World</h1>
+    <h1>who you find our Tolit</h1>
 
-    <form action="/action_page.php">
-        <label for="username">Username:</label>
+    <form action="https://kloapp.herokuapp.com/add">
+
+        <label for="username"> the Name</label>
         <input type="text" id="First Name" name="username" required>
         <input type="email" id="username" name="email" placeholder="write-your-email " required>
-        <input type="submit">
         <label for="Date"> <br> Birthday
             <br> <input type="date" min="1900-01-01" max="2022-01-01" valua="15-09-2020" .required>
         </label>
-
-
-    </form>
-
-    <thead>
-        <h2>Deutsche Länder</h2>
-        <form action="https://kloapp.herokuapp.com/all">
-            <!---             -->
-            <label for="Deutsche Länder">
-                Deutsche Länder:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
-
-            <select id="country" name="Deutsche Länder" class="Deutsche Länder">
-                <option value="Baden Württemberg">Baden Württemberg</option>
-                <option value="Bayern">Bayern</option>
-                <option value="Berlin">Berlin</option>
-                <option value="Brandenburg">Brandenburg</option>
-                <option value="Bremen">Bremen</option>
-                <option value="Brandenburg">Brandenburg</option>
-                <option value="Hamburg">Hamburg</option>
-                <option value="Hessen">Hessen</option>
-                <option value="Mecklenburg-Vorpommen">Mecklenburg-Vorpommen</option>
-                <option value="Niedersachsen">Niedersachsen</option>
-                <option value="Nordrhein Westfalen">Nordrhein Westfalen</option>
-                <option value="Rheinland Pflaz">Rheinland Pflaz</option>
-                <option value="Sarland">Sarland</option>
-                <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
-                <option value="Schleswig-Holstein">Schleswig-Holstein</option>
-                <option value="Thüringen">Thüringen</option>
-
+        <h2>Adress</h2>
+        <!---    Deutsche Länder         -->
+        <label for="Deutsche Länder">
+            Deutsche Länder:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
+        <select id="country" name="Deutsche Länder" class="Deutsche Länder">
+            <option value="empty"></option>
+            <option value="Baden Württemberg">Baden Württemberg</option>
+            <option value="Bayern">Bayern</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Brandenburg">Brandenburg</option>
+            <option value="Bremen">Bremen</option>
+            <option value="Brandenburg">Brandenburg</option>
+            <option value="Hamburg">Hamburg</option>
+            <option value="Hessen">Hessen</option>
+            <option value="Mecklenburg-Vorpommen">Mecklenburg-Vorpommen</option>
+            <option value="Niedersachsen">Niedersachsen</option>
+            <option value="Nordrhein Westfalen">Nordrhein Westfalen</option>
+            <option value="Rheinland Pflaz">Rheinland Pflaz</option>
+            <option value="Sarland">Sarland</option>
+            <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+            <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+            <option value="Thüringen">Thüringen</option>
+        </select>
+        <br> <label for="NCity">
+            <br>The City:</label><br>
+        <input type="text" id="NCity" name="city" minlength="3" required><br>
+        <label for="Street"> <br>The street
+            <br><input type="text" name="City" ilabeld="street" minlength="3" required>
+        </label>
+        <label for="Zip"> <br>Zip code
+            <br><input type="text" name="zip-code" minlength="5" maxlength="5" ilabeld="zip-code" required>
+        </label>
+        <label for="HouseNr"><br> House Nr:
+            <br><input type="text" id="HouseNr" name="steetnr"><br>
+        </label>
+        <label for="Name of location"><br> Name of Location
+            <br><input type="text" id="NameOfLocation" name="name" required><br>
+        </label>
+        <tbody>
+            <h2> Features</h2>
+            <!--Mirror-->
+            <label for="featMi">
+                Feat-Mirror
+                <br><input type="checkbox" name="Feat-mirror" id="featMi">
+            </label>
+            <label for="rating" class="rat1"> Rating
+                <input type="radio" name="rating" value="1" id="first">
+                <input type="radio" name="rating" value="2" id="secand">
+                <input type="radio" name="rating" value="3" id="ther">
+                <input type="radio" name="rating" value="4" id="four">
+                <input type="radio" name="rating" value="5" id="five">
+            </label>
+            <label for="paper">
+                <br>Paper towels
+                <br> <input type="checkbox" name="feat-papertowels" id="paper">
+            </label>
+            <label for="Rating">How is the Paper ?</label><span
+                style="color: red !important; display: inline; float: none;">
+                <br>*</span>
+            <select id="one" name="Rating" class="ratin-n">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
-            <br> <label for="NCity">
-                <br>The City:</label><br>
-            <input type="text" id="NCity" name="city" minlength="3" required><br>
-
-            <label for="Street"> <br>The street
-                <br><input type="text" name="City" ilabeld="street" minlength="3" required>
+            <label for="Perfume">
+                <br>Perfume
+                <br> <input type="checkbox" name="feat-perfume" id="Perfume">
             </label>
-            <label for="Zip"> <br>Zip code
-                <br><input type="text" name="zip-code" minlength="5" maxlength="5" ilabeld="zip-code" required>
+            <label for="Soap">
+                <br>Soap
+                <br> <input type="checkbox" name="feat-soap" id="Soap">
             </label>
-
-
-            <label for="HouseNr"><br> House Nr:
-                <br><input type="text" id="HouseNr" name="steetnr"><br>
+            <label for="Accessibility">
+                <br>Accessibility
+                <br> <input type="text" name="feat-access" id="Accessibility">
             </label>
-            <label for="Name of location"><br> Name of Location
-                <br><input type="text" id="NameOfLocation" name="name" required><br>
+            <label for="Number of stalls">
+                <br>Number of stalls
+                <br> <input type="number" name="stalls" id="Number of stalls" min="1">
             </label>
-
-    </thead>
-    <tbody>
-        <h2>
-            Features
-        </h2>
-
-        <!--Mirror-->
-        <label for="featMi">
-            Feat-Mirror
-            <br><input type="checkbox" name="Feat-mirror" id="featMi">
-        </label>
-
-        <label for="paper">
-            <br>Paper towels
-            <br> <input type="checkbox" name="feat-papertowels" id="paper">
-        </label>
-
-
-        <label for="Perfume">
-            <br>Perfume
-            <br> <input type="checkbox" name="feat-perfume" id="Perfume">
-        </label>
-
-        <label for="Accessibility">
-            <br>Accessibility
-            <br> <input type="text" name="feat-access" id="Accessibility">
-        </label>
-
-        <label for="Soap">
-            <br>Soap
-            <br> <input type="checkbox" name="feat-soap" id="Soap">
-        </label>
-
-        <label for="Number of stalls">
-            <br>Number of stalls
-            <br> <input type="number" name="stalls" id="Number of stalls" min="1">
-        </label>
-
-        <!--Rating-->
-
-        <label for="Rating>
+            <!--Rating-->
+            <label for="Rating>
             <br>Rating
             <br> <br> <input type=" radio" name="rating" id="first">
-        </label>
+            </label>
+            <!--How we can kepp all reting?-->
+            <label for="rating"> <br> Rating (1-5)
+                <br> <input type="number" min="1" max="5" name="rating" vid="first">
+                <div class="rating111">
+                    <label>
+                        <input type="radio" name="stars" value="1" />
+                        <span class="icon">★</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="2" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="3" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="4" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="5" />
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                        <span class="icon">★</span>
+                    </label>
+                </div>
 
-        <!--How we can kepp all reting?-->
-        <label for="rating"> <br> Rating
-            <br> <input type="radio" name="rating" value="1" id="first">
-            <input type="radio" name="rating" value="2" id="secand">
-            <input type="radio" name="rating" value="3" id="ther">
-            <input type="radio" name="rating" value="4" id="four">
-            <input type="radio" name="rating" value="5" id="five">
-        </label>
-
-
-
-        <label for="rating"> <br> Rating (1-5)
-            <br> <input type="number" min="1" max="5" name="rating" vid="first">
-
-        </label>
-
-
-
-        <!-- Add icon library -->
-        <h2>Star Rating</h2>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-
-
-        <br><label for="Rating">
-            Group rating:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
-
-        <select id="one" name="Rating" class="ratin-n">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-
-        </select>
-
-        <!-- Rounded switch -->
-        <br><label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        <h2>kids</h2>
-        <table>
-            <tr>
-                <th colspan="2">The first Name </th>
-                <th colspan="2">The Last Name </th>
-                <th colspan="2">The Hoppey </th>
-            </tr>
-
-            </tr>
-            <tr>
-                <td.rowspan="2"> Cologen </td.rowspan=>
-                    <td.rowspan="2"> Mcdonaldes </td.rowspan=>
-                        <td.rowspan="2"> Airdryes </td.rowspan=>
-
-            </tr>
-
-
-
-
-            </form>
+                <!-- Rounded switch -->
+                <h3> did you like it </h3>
+                <br><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"> </span>
+                </label>
+                <br><label for="Send">
+                    <br> <input type="submit" value="send">
+                </label>
+                <h2>Tablet</h2>
+                <table id="toilets-table">
+                    <thead>
+                        <tr>
+                            <th>city </th>
+                            <th>location </th>
+                            <th>address </th>
+                            <th>Haus-Nr </th>
+                            <th>feat-mirror</th>
+                            <th>feat-papertowels </th>
+                            <th>feat-perfume </th>
+                            <th>feat-access </th>
+                            <th> feat-soap</th>
+                            <th> rating</th>
+                            <th>stell </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="city"></td>
+                            <td class="location"></td>
+                            <td class="address"></td>
+                            <td class="feat-mirror"></td>
+                            <td class="feat-papertowels"></td>
+                            <td class="feat-perfume"></td>
+                            <td class="feat-access"></td>
+                            <td class="feat-soap"></td>
+                            <td class="stalls"></td>
+                            <td class="rating"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <script src="https://kloapp.herokuapp.com/javascripts/pure.min.js"></script>
+                <script src="https://kloapp.herokuapp.com/javascripts/render.js"></script>
+    </form>
 </body>
 
 </html>
