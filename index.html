@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>who you finf our Tolit</h1>
+    <form action="https://kloapp.herokuapp.com/add">
+        <label for="username"> the Name</label>
+        <input type="text" id="First Name" name="username" required>
+        <input type="email" id="username" name="email" placeholder="write-your-email " required>
+        <label for="Date"> <br> Birthday
+            <br> <input type="date" min="1900-01-01" max="2022-01-01" valua="15-09-2020" .required>
+        </label>
+    </form>
+    <h2>Adress</h2>
+    <form action="https://kloapp.herokuapp.com/all">
+        <!---    Deutsche Länder         -->
+        <label for="Deutsche Länder">
+            Deutsche Länder:</label><span style="color: red !important; display: inline; float: none;"> <br>*</span>
+        <select id="country" name="Deutsche Länder" class="Deutsche Länder">
+            <option value="empty"></option>
+            <option value="Baden Württemberg">Baden Württemberg</option>
+            <option value="Bayern">Bayern</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Brandenburg">Brandenburg</option>
+            <option value="Bremen">Bremen</option>
+            <option value="Brandenburg">Brandenburg</option>
+            <option value="Hamburg">Hamburg</option>
+            <option value="Hessen">Hessen</option>
+            <option value="Mecklenburg-Vorpommen">Mecklenburg-Vorpommen</option>
+            <option value="Niedersachsen">Niedersachsen</option>
+            <option value="Nordrhein Westfalen">Nordrhein Westfalen</option>
+            <option value="Rheinland Pflaz">Rheinland Pflaz</option>
+            <option value="Sarland">Sarland</option>
+            <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+            <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+            <option value="Thüringen">Thüringen</option>
+        </select>
+        <br> <label for="NCity">
+            <br>The City:</label><br>
+        <input type="text" id="NCity" name="city" minlength="3" required><br>
+        <label for="Street"> <br>The street
+            <br><input type="text" name="City" ilabeld="street" minlength="3" required>
+        </label>
+        <label for="Zip"> <br>Zip code
+            <br><input type="text" name="zip-code" minlength="5" maxlength="5" ilabeld="zip-code" required>
+        </label>
+        <label for="HouseNr"><br> House Nr:
+            <br><input type="text" id="HouseNr" name="steetnr"><br>
+        </label>
+        <label for="Name of location"><br> Name of Location
+            <br><input type="text" id="NameOfLocation" name="name" required><br>
+        </label>
+        <tbody>
+            <h2>
+                Features
+            </h2>
+            <!--Mirror-->
+            <label for="featMi">
+                Feat-Mirror
+                <br><input type="checkbox" name="Feat-mirror" id="featMi">
+            </label>
+            <label for="rating" class="rat1"> Rating
+                <input type="radio" name="rating" value="1" id="first">
+                <input type="radio" name="rating" value="2" id="secand">
+                <input type="radio" name="rating" value="3" id="ther">
+                <input type="radio" name="rating" value="4" id="four">
+                <input type="radio" name="rating" value="5" id="five">
+            </label>
+            <label for="paper">
+                <br>Paper towels
+                <br> <input type="checkbox" name="feat-papertowels" id="paper">
+            </label>
+            <label for="Rating">How is the Paper ?</label><span
+                style="color: red !important; display: inline; float: none;">
+                <br>*</span>
+            <select id="one" name="Rating" class="ratin-n">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+
+
+
+
+
+
+
+
+
+            <label for="Perfume">
+                <br>Perfume
+                <br> <input type="checkbox" name="feat-perfume" id="Perfume">
+            </label>
+            <label for="Soap">
+                <br>Soap
+                <br> <input type="checkbox" name="feat-soap" id="Soap">
+            </label>
+            <label for="Accessibility">
+                <br>Accessibility
+                <br> <input type="text" name="feat-access" id="Accessibility">
+            </label>
+            <label for="Number of stalls">
+                <br>Number of stalls
+                <br> <input type="number" name="stalls" id="Number of stalls" min="1">
+            </label>
+            <!--Rating-->
+            <label for="Rating>
+            <br>Rating
+            <br> <br> <input type=" radio" name="rating" id="first">
+            </label>
+            <!--How we can kepp all reting?-->
+
+
+
+
+
+
+            <label for="rating"> <br> Rating (1-5)
+                <br> <input type="number" min="1" max="5" name="rating" vid="first">
+
+                <!-- Add icon library
+    
+        <h2>Star Rating</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+  -->
+
+    </form>
+
+    <form class="rating">
+        <label>
+            <input type="radio" name="stars" value="1" />
+            <span class="icon">★</span>
+        </label>
+        <label>
+            <input type="radio" name="stars" value="2" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+        </label>
+        <label>
+            <input type="radio" name="stars" value="3" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+        </label>
+        <label>
+            <input type="radio" name="stars" value="4" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+        </label>
+        <label>
+            <input type="radio" name="stars" value="5" />
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+            <span class="icon">★</span>
+        </label>
+    </form>
+
+
+    <!-- Rounded switch -->
+    <h3> did you like it </h3>
+    <br><label class="switch">
+        <input type="checkbox">
+        <span class="slider round"> </span>
+    </label>
+    <br><label for="Send">Send
+        <input type="submit">
+    </label>
+
+    <h2>Tablet</h2>
+    <table id="date-table">
+        <tr>
+            <th colspan="3">city </th>
+            <th colspan="3">The street </th>
+            <th colspan="2">Zip-code </th>
+            <th colspan="2">Haus-Nr </th>
+            <th colspan="2">Name Of Loction </th>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
